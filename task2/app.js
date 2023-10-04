@@ -26,6 +26,7 @@ class SearchWord {
     numberWord() {
         let str = this.clear();
         let arr = str.toLowerCase().split(' ');
+        this.word.toLowerCase();
         let rez = 0;
         
         for(let i = 0; i < arr.length; i++) {
