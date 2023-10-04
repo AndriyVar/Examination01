@@ -16,8 +16,7 @@ class ArrayOperations {
 
     
     uniq() {
-        const allArrays = [this.arr1, this.arr2, this.arr3, this.arr4];
-        const combinedArray = [].concat(...allArrays);
+        const combinedArray = [].concat(this.arr1, this.arr2, this.arr3, this.arr4);
     
         const countMap = new Map();
     
@@ -93,38 +92,3 @@ console.log(op.sort());
 console.log(op.common());
 console.log(op.primeNumbers());
 console.log(op.uniq());
-
-// class UniqueArrays {
-//     constructor() {
-//       this.arrays = [];
-//     }
-  
-//     addArray(inputArray) {
-//       const uniqueArray = [...new Set(inputArray)];
-//       this.arrays.push(uniqueArray);
-//     }
-  
-//     getArrays() {
-//       return this.arrays;
-//     }
-//   }
-  
-//   // Вхідні масиви
-//   const array1 = [1, 2, 3, 4, 5];
-//   const array2 = [3, 4, 5, 6, 7];
-//   const array3 = [5, 6, 7, 8, 9];
-//   const array4 = [7, 8, 9, 10, 11];
-  
-//   // Створення екземпляру класу
-//   const uniqueArrays = new UniqueArrays();
-  
-//   // Додавання вхідних масивів до об'єкту
-//   uniqueArrays.addArray(array1);
-//   uniqueArrays.addArray(array2);
-//   uniqueArrays.addArray(array3);
-//   uniqueArrays.addArray(array4);
-  
-//   // Отримання унікальних масивів
-//   const resultArrays = uniqueArrays.getArrays();
-  
-//   console.log(resultArrays);
