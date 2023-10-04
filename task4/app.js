@@ -61,9 +61,8 @@ class ArrayOperations {
     // прості числа
     primeNumbers() {
         const arr = this.arr1.concat(this.arr2, this.arr3, this.arr4);
-        const unique = arr.filter((elem) => this.isPrime(elem));
-        const arr5 = Array.from(new Set(unique));
-        return arr5;
+        const unique = arr.filter((elem, index, self) => self.indexOf(elem) === index && this.isPrime(elem));
+        return unique
     }
   
     isPrime(num) {
